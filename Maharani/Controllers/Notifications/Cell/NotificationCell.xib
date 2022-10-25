@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+        <array key="work-sans.semibold.otf">
+            <string>WorkSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationCell" rowHeight="113" id="KGk-i7-Jjw" customClass="NotificationCell" customModule="Maharani" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="332" height="113"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="332" height="113"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tfa-ZA-Jce">
+                        <rect key="frame" x="10" y="0.0" width="312" height="103"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03 Nov, 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGB-u4-u62">
+                                <rect key="frame" x="20" y="18" width="81" height="10"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Your order placed successfully, for more information please check the request..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPI-pp-QMT">
+                                <rect key="frame" x="20" y="50" width="272" height="33"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Its Order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dge-iF-vMc">
+                                <rect key="frame" x="20" y="31" width="54.5" height="16"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9V-dK-jf7">
+                                <rect key="frame" x="278" y="12" width="23" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="23" id="ORU-XB-wxY"/>
+                                    <constraint firstAttribute="height" constant="23" id="pPw-VR-07q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="WorkSans-SemiBold" family="Work Sans" pointSize="17"/>
+                                <state key="normal" backgroundImage="cross"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="removeButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hJU-RH-PeC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Dge-iF-vMc" firstAttribute="leading" secondItem="qGB-u4-u62" secondAttribute="leading" id="7om-jG-CH8"/>
+                            <constraint firstAttribute="trailing" secondItem="O9V-dK-jf7" secondAttribute="trailing" constant="11" id="J7G-qb-y3Y"/>
+                            <constraint firstAttribute="trailing" secondItem="PPI-pp-QMT" secondAttribute="trailing" constant="20" id="RPo-K3-BTd"/>
+                            <constraint firstItem="PPI-pp-QMT" firstAttribute="leading" secondItem="qGB-u4-u62" secondAttribute="leading" id="VQy-ZS-hjI"/>
+                            <constraint firstItem="qGB-u4-u62" firstAttribute="leading" secondItem="tfa-ZA-Jce" secondAttribute="leading" constant="20" id="ZnW-nj-lgq"/>
+                            <constraint firstItem="Dge-iF-vMc" firstAttribute="top" secondItem="qGB-u4-u62" secondAttribute="bottom" constant="3" id="d9n-nF-cmQ"/>
+                            <constraint firstItem="PPI-pp-QMT" firstAttribute="top" secondItem="Dge-iF-vMc" secondAttribute="bottom" constant="3" id="ia1-Fl-PlC"/>
+                            <constraint firstItem="O9V-dK-jf7" firstAttribute="top" secondItem="tfa-ZA-Jce" secondAttribute="top" constant="12" id="kC8-eG-KXk"/>
+                            <constraint firstItem="qGB-u4-u62" firstAttribute="top" secondItem="tfa-ZA-Jce" secondAttribute="top" constant="18" id="veE-O2-ANf"/>
+                            <constraint firstAttribute="bottom" secondItem="PPI-pp-QMT" secondAttribute="bottom" constant="20" id="yOe-R6-Y09"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="tfa-ZA-Jce" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Oz8-Oq-Fw4"/>
+                    <constraint firstAttribute="trailing" secondItem="tfa-ZA-Jce" secondAttribute="trailing" constant="10" id="lig-LT-iD9"/>
+                    <constraint firstItem="tfa-ZA-Jce" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="riT-d8-VK3"/>
+                    <constraint firstAttribute="bottom" secondItem="tfa-ZA-Jce" secondAttribute="bottom" constant="10" id="yak-qo-3CG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="closeBtn" destination="O9V-dK-jf7" id="ZLu-jE-wN0"/>
+                <outlet property="datelbl" destination="qGB-u4-u62" id="6cq-Oz-R3Z"/>
+                <outlet property="descriptionLbl" destination="PPI-pp-QMT" id="e9B-dI-BY5"/>
+                <outlet property="titleLbl" destination="Dge-iF-vMc" id="6PN-Ze-Oho"/>
+            </connections>
+            <point key="canvasLocation" x="146.37681159420291" y="96.09375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cross" width="25" height="25"/>
+    </resources>
+</document>

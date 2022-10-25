@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DateCollectionCell" id="trG-Qd-jTg" customClass="DateCollectionCell" customModule="Maharani" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="117" height="224"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="117" height="224"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PQy-Pn-BsS">
+                        <rect key="frame" x="4" y="4" width="109" height="216"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tvr-91-2gc">
+                                <rect key="frame" x="16" y="12" width="77" height="192"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="apd-vN-dGm">
+                                        <rect key="frame" x="0.0" y="0.0" width="77" height="96"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
+                                        <color key="textColor" red="0.26274509800000001" green="0.26274509800000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="ffl-3c-k9O">
+                                        <rect key="frame" x="0.0" y="96" width="77" height="96"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
+                                        <color key="textColor" red="0.26274509800000001" green="0.26274509800000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77" id="LVD-C1-MrF"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="tvr-91-2gc" secondAttribute="bottom" constant="12" id="0Lv-im-Io4"/>
+                            <constraint firstItem="tvr-91-2gc" firstAttribute="top" secondItem="PQy-Pn-BsS" secondAttribute="top" constant="12" id="Hno-I8-HEI"/>
+                            <constraint firstItem="tvr-91-2gc" firstAttribute="centerX" secondItem="PQy-Pn-BsS" secondAttribute="centerX" id="R81-r0-RPZ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.43137254899999999" green="0.43137254899999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="ibcornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="BPT-Z9-LkQ"/>
+            <constraints>
+                <constraint firstItem="PQy-Pn-BsS" firstAttribute="top" secondItem="trG-Qd-jTg" secondAttribute="top" constant="4" id="5Ax-5j-qBf"/>
+                <constraint firstItem="PQy-Pn-BsS" firstAttribute="leading" secondItem="trG-Qd-jTg" secondAttribute="leading" constant="4" id="9Zj-8f-GjJ"/>
+                <constraint firstAttribute="bottom" secondItem="PQy-Pn-BsS" secondAttribute="bottom" constant="4" id="dSw-kb-r5a"/>
+                <constraint firstAttribute="trailing" secondItem="PQy-Pn-BsS" secondAttribute="trailing" constant="4" id="ski-kR-J6z"/>
+            </constraints>
+            <size key="customSize" width="117" height="224"/>
+            <connections>
+                <outlet property="baseView" destination="PQy-Pn-BsS" id="Q0b-lW-qMt"/>
+                <outlet property="itemDate" destination="apd-vN-dGm" id="Wss-Bn-wZ4"/>
+                <outlet property="itemDay" destination="ffl-3c-k9O" id="tSI-0A-1Ei"/>
+            </connections>
+            <point key="canvasLocation" x="181.8840579710145" y="116.51785714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>

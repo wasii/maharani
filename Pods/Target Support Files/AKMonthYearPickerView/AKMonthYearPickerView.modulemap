@@ -1,0 +1,6 @@
+framework module AKMonthYearPickerView {
+  umbrella header "AKMonthYearPickerView-umbrella.h"
+
+  export *
+  module * { export * }
+}

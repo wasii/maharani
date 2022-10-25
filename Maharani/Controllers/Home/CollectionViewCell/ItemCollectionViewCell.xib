@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ItemCollectionViewCell" customModule="Maharani" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="143" height="224"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="143" height="224"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uy7-sc-ww3">
+                        <rect key="frame" x="4" y="4" width="135" height="216"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Food" translatesAutoresizingMaskIntoConstraints="NO" id="Df2-BT-FAD">
+                                <rect key="frame" x="0.0" y="0.0" width="135" height="216"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aPJ-QV-ODs">
+                                <rect key="frame" x="12" y="12" width="111" height="192"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hXy-4b-S99">
+                                        <rect key="frame" x="0.0" y="0.0" width="111" height="139.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hair" translatesAutoresizingMaskIntoConstraints="NO" id="BPT-Ko-VFe">
+                                                <rect key="frame" x="-4.5" y="10" width="120" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="f0I-AC-4B3"/>
+                                                    <constraint firstAttribute="width" constant="120" id="mPX-ky-TBx"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="ibcornerRadius">
+                                                        <integer key="value" value="60"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="BPT-Ko-VFe" firstAttribute="centerX" secondItem="hXy-4b-S99" secondAttribute="centerX" id="GT9-Xj-P8v"/>
+                                            <constraint firstItem="BPT-Ko-VFe" firstAttribute="centerY" secondItem="hXy-4b-S99" secondAttribute="centerY" id="aKt-yz-6K7"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRE Bridal package" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Q2E-av-82b">
+                                        <rect key="frame" x="0.0" y="149.5" width="111" height="42.5"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aPJ-QV-ODs" firstAttribute="leading" secondItem="uy7-sc-ww3" secondAttribute="leading" constant="12" id="0dK-57-pEa"/>
+                            <constraint firstItem="Df2-BT-FAD" firstAttribute="height" secondItem="uy7-sc-ww3" secondAttribute="height" id="7zw-Jv-Npy"/>
+                            <constraint firstAttribute="trailing" secondItem="aPJ-QV-ODs" secondAttribute="trailing" constant="12" id="Yfo-Zc-CXt"/>
+                            <constraint firstItem="Df2-BT-FAD" firstAttribute="width" secondItem="uy7-sc-ww3" secondAttribute="width" id="d3e-hV-mYc"/>
+                            <constraint firstItem="aPJ-QV-ODs" firstAttribute="top" secondItem="uy7-sc-ww3" secondAttribute="top" constant="12" id="grN-ik-GtN"/>
+                            <constraint firstAttribute="bottom" secondItem="aPJ-QV-ODs" secondAttribute="bottom" constant="12" id="oxr-CR-N3M"/>
+                            <constraint firstItem="Df2-BT-FAD" firstAttribute="centerY" secondItem="uy7-sc-ww3" secondAttribute="centerY" id="pOj-Z0-JnD"/>
+                            <constraint firstItem="Df2-BT-FAD" firstAttribute="centerX" secondItem="uy7-sc-ww3" secondAttribute="centerX" id="wfd-di-Gat"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="uy7-sc-ww3" secondAttribute="bottom" constant="4" id="IUJ-Nc-4ih"/>
+                <constraint firstItem="uy7-sc-ww3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="RGF-hg-7mb"/>
+                <constraint firstAttribute="trailing" secondItem="uy7-sc-ww3" secondAttribute="trailing" constant="4" id="V4J-Tb-EPX"/>
+                <constraint firstItem="uy7-sc-ww3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="tuL-rj-Yb4"/>
+            </constraints>
+            <size key="customSize" width="143" height="224"/>
+            <connections>
+                <outlet property="baseView" destination="uy7-sc-ww3" id="b14-Pq-RO1"/>
+                <outlet property="itemImage" destination="BPT-Ko-VFe" id="lf5-b7-QrS"/>
+                <outlet property="itemLabel" destination="Q2E-av-82b" id="kdu-yV-Ytj"/>
+            </connections>
+            <point key="canvasLocation" x="200.72463768115944" y="116.51785714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Food" width="107" height="91"/>
+        <image name="hair" width="106.5" height="106.5"/>
+    </resources>
+</document>
